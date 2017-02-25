@@ -1,9 +1,10 @@
 import os
 import subprocess
+import sys
 
+from here_the_leafsighaway import config
 from here_the_leafsighaway import image_trimmer
 from here_the_leafsighaway.lily import note, score
-from here_the_leafsighaway import config
 
 
 class LilypondFile:
@@ -175,10 +176,16 @@ class LilypondFile:
             path += '.ly'
         if not os.path.exists(path):
             raise ValueError('Path % does not exist' % path)
-
-        subprocess.call(["lilypond", "--png", "-dresolution=" + str(config.ImageDPI), path],
-                        cwd=os.path.dirname(path))
-
+        try:
+            subprocess.call(["lilypond", "--png", "-dresolution=" + str(config.ImageDPI), path],
+                cwd=os.path.dirname(path))
+        except OSError as e:
+            if e.errno == os.errno.ENOENT:
+                print("Could not find lilypond on system path! "
+                      "Please visit http://lilypond.org/ to install it and try again.")
+                sys.exit(1)
+            else:
+                raise
         # Return the newly-created PNG file path
         return path[:-3] + '.png'
 
