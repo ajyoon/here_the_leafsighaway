@@ -1,8 +1,8 @@
 import copy
 import random
 
-from here_the_leafsighaway.chance.rand import weighted_rand
 from here_the_leafsighaway.chance import nodes
+from here_the_leafsighaway.chance.rand import weighted_rand
 
 
 class Network:

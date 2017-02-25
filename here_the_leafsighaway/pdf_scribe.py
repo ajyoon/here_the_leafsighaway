@@ -7,12 +7,14 @@ import reportlab.lib.styles
 import reportlab.pdfgen.canvas
 import reportlab.platypus
 import reportlab.rl_config
+from reportlab.lib.units import inch as rl_inch
 
+from here_the_leafsighaway import config
+from here_the_leafsighaway import document_tools
 from here_the_leafsighaway.chance import (network,
                                           nodes,
                                           prebuilt_networks,
                                           rand)
-from here_the_leafsighaway import document_tools
 from here_the_leafsighaway.instruments import (
     guitar,
     toy_piano,
@@ -30,8 +32,6 @@ from here_the_leafsighaway.instruments import (
     trombone,
     violin,
     percussion)
-from here_the_leafsighaway import config
-from reportlab.lib.units import inch as rl_inch
 
 
 class TextUnit:

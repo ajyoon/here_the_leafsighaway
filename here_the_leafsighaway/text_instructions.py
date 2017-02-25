@@ -1,7 +1,7 @@
 import random
 
-from here_the_leafsighaway.chance import rand
 from here_the_leafsighaway import config
+from here_the_leafsighaway.chance import rand
 from here_the_leafsighaway.lily import lilypond_file
 
 shared_list = [("wait for the nearest instrumentalist to finish one phrase before continuing", 37),

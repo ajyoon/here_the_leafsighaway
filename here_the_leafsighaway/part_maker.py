@@ -3,10 +3,10 @@ import random
 import subprocess
 import time
 
-from here_the_leafsighaway.chance import rand, nodes
-from here_the_leafsighaway import pdf_scribe, document_tools
 from here_the_leafsighaway import config
+from here_the_leafsighaway import pdf_scribe, document_tools
 from here_the_leafsighaway import text_instructions
+from here_the_leafsighaway.chance import rand, nodes
 
 
 def make_parts(parts_list, target_page_count=20, clean_up_temps=True):

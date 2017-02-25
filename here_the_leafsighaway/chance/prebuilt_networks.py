@@ -1,5 +1,5 @@
-from here_the_leafsighaway.chance.nodes import Scalar, Vector
 from here_the_leafsighaway.chance.network import Network
+from here_the_leafsighaway.chance.nodes import Scalar, Vector
 
 
 def indenter():

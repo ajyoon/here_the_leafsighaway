@@ -1,9 +1,9 @@
 import random
 
 from here_the_leafsighaway import config
-from here_the_leafsighaway.lily import note, score, lilypond_file
 from here_the_leafsighaway import text_instructions
 from here_the_leafsighaway.chance import rand, nodes, network
+from here_the_leafsighaway.lily import note, score, lilypond_file
 
 
 class Instrument:

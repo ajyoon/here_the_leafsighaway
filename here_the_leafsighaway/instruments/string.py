@@ -1,9 +1,9 @@
 import random
 
+from here_the_leafsighaway import config
 from here_the_leafsighaway.chance import nodes, rand
 from here_the_leafsighaway.instruments import base_instrument
 from here_the_leafsighaway.lily import lilypond_file
-from here_the_leafsighaway import config
 
 
 class String(base_instrument.Instrument):

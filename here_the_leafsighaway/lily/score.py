@@ -1,4 +1,4 @@
-from here_the_leafsighaway.lily.note import *
+from here_the_leafsighaway.lily.note import Note
 
 
 class Score:
