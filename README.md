@@ -15,12 +15,12 @@ Both Python 3 and GNU lilypond must be installed and on your system path.
 * GNU Lilypond - http://lilypond.org/
 
 Once these are installed, download or clone this repository.
-From your system terminal (what's that? [Windows](http://www.wikihow.com/Open-the-Command-Prompt-in-Windows)
+From your system terminal (what's that? [Windows](http://www.wikihow.com/Open-the-Command-Prompt-in-Windows) |
 [Mac](http://www.wikihow.com/Open-a-Terminal-Window-in-Mac)), 
 install the part maker package and its dependencies using pip:
 
 ```bash
-cd here_the_leafsighaway
+cd path/to/where/you/downloaded/here_the_leafsighaway
 pip install -e .
 ```
 
