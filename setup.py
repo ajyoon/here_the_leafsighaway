@@ -3,8 +3,7 @@ from distutils.core import setup
 setup(
     name='Part Maker',
     version='',
-    packages=['gui', 'top', 'lily', 'chance', 'shared', 'image_tools', 'instruments', 'document_tools',
-              'special_instructions'],
+    packages=['here_the_leafsighaway'],
     install_requires=["reportlab", "Pillow", "PyPDF2"],
     url='',
     license='',
