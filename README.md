@@ -11,8 +11,8 @@ set of parts be generated with this program.
 
 Both Python 3 and GNU lilypond must be installed and on your system path.
 
-1) Python 3 - https://www.python.org/ (be sure to install Python **3**)
-2) GNU Lilypond - http://lilypond.org/
+* Python 3 - https://www.python.org/ (be sure to install Python **3**)
+* GNU Lilypond - http://lilypond.org/
 
 Once these are installed, download or clone this repository.
 From your system terminal (what's that? [Windows](http://www.wikihow.com/Open-the-Command-Prompt-in-Windows)
