@@ -4,6 +4,8 @@ This is the code used to generate the parts for *here, the leafsighaway*,
 a mutable music-poem for instrumentalists, speakers, and audience.
 The premiere performance and recording occured on November 21st, 2015,
 and can be heard [here](https://www.youtube.com/watch?v=Ag-gPrtWQHo).
+A sample of the output of (a slightly earlier version of) this program
+can be viewed [here](http://andrewjyoon.com/static/score_samples/here_the_leafsighaway_excerpt.pdf).
 It is intended that with each performance of the piece, a completely new
 set of parts be generated with this program.
 
@@ -16,7 +18,7 @@ Both Python 3 and GNU lilypond must be installed and on your system path.
 
 Once these are installed, download or clone this repository.
 From your system terminal (what's that? [Windows](http://www.wikihow.com/Open-the-Command-Prompt-in-Windows) |
-[Mac](http://www.wikihow.com/Open-a-Terminal-Window-in-Mac)), 
+[Mac](http://www.wikihow.com/Open-a-Terminal-Window-in-Mac)),
 install the part maker package and its dependencies using pip:
 
 ```bash
