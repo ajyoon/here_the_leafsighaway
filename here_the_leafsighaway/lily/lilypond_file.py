@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+import errno
 
 from here_the_leafsighaway import config
 from here_the_leafsighaway import image_trimmer
@@ -180,7 +181,7 @@ class LilypondFile:
             subprocess.call(["lilypond", "--png", "-dresolution=" + str(config.ImageDPI), path],
                 cwd=os.path.dirname(path))
         except OSError as e:
-            if e.errno == os.errno.ENOENT:
+            if e.errno == errno.ENOENT:
                 print("Could not find lilypond on system path! "
                       "Please visit http://lilypond.org/ to install it and try again.")
                 sys.exit(1)

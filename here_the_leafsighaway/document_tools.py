@@ -20,7 +20,7 @@ def merge_pdf_files(file_strings, output_path):
 
     if os.path.isdir(output_path):
         output_path = os.path.join(output_path, file_strings[0].replace('.pdf', '_MERGED.pdf'))
-    merger = PyPDF2.PdfFileMerger(strict=False)
+    merger = PyPDF2.PdfMerger(strict=False)
     for merge_file in file_strings:
         in_file = merge_file
         merger.append(in_file)
